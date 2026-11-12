@@ -1,0 +1,18 @@
+body{font-family:Inter,sans-serif;background:#f5f7fb;margin:0;color:#111}
+header{background:white;padding:15px 25px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);flex-wrap:wrap;gap:10px}
+.logo{font-weight:800;font-size:22px;color:#0a1931}
+.volatility-selector button{margin:2px;padding:6px 12px;border:1px solid #ddd;border-radius:20px;background:white;cursor:pointer;font-size:13px}
+.volatility-selector button.active{background:#0e7c8a;color:white;border-color:#0e7c8a}
+.balance{background:#eef1f7;padding:6px 12px;border-radius:8px;font-weight:600}
+main{display:grid;grid-template-columns:2fr 1fr;gap:20px;padding:20px}
+.chart-section{background:white;border-radius:16px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.05)}
+.live{background:#d1fae5;color:#065f46;padding:2px 8px;border-radius:12px;font-size:12px}
+.scanner,.trade-panel{background:white;border-radius:16px;padding:20px;margin-bottom:20px;box-shadow:0 4px 20px rgba(0,0,0,0.05)}
+table{width:100%;font-size:14px;border-collapse:collapse}
+th{text-align:left;color:#666;padding:8px 0;border-bottom:1px solid #eee}
+td{padding:10px 0;border-bottom:1px solid #f5f5f5}
+.rise{background:#0e9f6e;color:white;border:none;padding:12px 20px;border-radius:10px;width:48%;cursor:pointer;font-weight:700}
+.fall{background:#e02424;color:white;border:none;padding:12px 20px;border-radius:10px;width:48%;cursor:pointer;font-weight:700}
+.buttons{display:flex;justify-content:space-between;margin-top:15px;gap:10px}
+input,select{width:100%;padding:8px;border-radius:8px;border:1px solid #ddd;margin:5px 0 10px}
+@media(max-width:900px){main{grid-template-columns:1fr}}
