@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tracktrade - Volatility Trading</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">T Tracktrade</div>
+  <div class="volatility-selector">
+    <button onclick="changeMarket('1HZ10V','Volatility 10')">Volatility 10</button>
+    <button class="active">Volatility 25</button>
+    <button onclick="changeMarket('1HZ50V','Volatility 50')">Volatility 50</button>
+    <button onclick="changeMarket('1HZ75V','Volatility 75')">Volatility 75</button>
+    <button onclick="changeMarket('1HZ100V','Volatility 100')">Volatility 100</button>
+    <button onclick="changeMarket('BOOM1000','Boom')">Boom</button>
+    <button onclick="changeMarket('CRASH1000','Crash')">Crash</button>
+  </div>
+  <div class="balance">Demo $9,997.42</div>
+</header>
+<main>
+  <div class="chart-section">
+    <h2 id="marketName">Volatility 25 <span class="live">Live • Real-time</span></h2>
+    <h1 id="priceDisplay">25.1234 <small>+0.32%</small></h1>
+    <div id="chart">Chart ina-load hapa</div>
+    <div class="ohlc">Open 25.0452 | High 25.1401 | Low 25.0330</div>
+  </div>
+  <aside>
+    <div class="scanner">
+      <h3>Market Scanner</h3>
+      <table>
+        <tr><th>Market</th><th>Movement</th><th>Trend</th></tr>
+        <tr><td>Volatility 25</td><td>Rising</td><td>Bullish</td></tr>
+        <tr><td>Volatility 10</td><td>Falling</td><td>Bearish</td></tr>
+        <tr><td>Boom 1000</td><td>Rising</td><td>Bullish</td></tr>
+      </table>
+    </div>
+    <div class="trade-panel">
+      <h3>Place Trade</h3>
+      <label>Stake (USD) <input id="stake" value="100"></label>
+      <div class="buttons">
+        <button class="rise" onclick="buyRise()">Rise</button>
+        <button class="fall" onclick="buyFall()">Fall</button>
+      </div>
+      <p>Estimated payout: +90% • $190</p>
+      <p id="status"></p>
+    </div>
+  </aside>
+</main>
+<script src="app.js"></script>
+</body>
+  </html>
